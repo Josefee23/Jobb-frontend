@@ -465,3 +465,10 @@ input, textarea {
 .vv{
     color: white !important;
 }
+.dan{
+    background-color: rgb(243, 136, 136);
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}

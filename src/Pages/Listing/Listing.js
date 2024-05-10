@@ -29,25 +29,25 @@ const Listing = () => {
   const [isLoading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
 
-  // React.useEffect(() => {
-  //   const fetchData = async () => {
-  //     setLoading(true); // Set loading state to true when fetching data
-  //     setError(null); // Reset error state
+  React.useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true); // Set loading state to true when fetching data
+      setError(null); // Reset error state
 
-  //     try {
-  //       const response = await axios.request(options);
-  //       console.log(response.data);
-  //       setData(response.data);
-  //     } catch (error) {
-  //       console.error(error);
-  //       setError(error); // Set error state if there's an error
-  //     } finally {
-  //       setLoading(false); // Set loading state to false when data fetching is done
-  //     }
-  //   };
+      try {
+        const response = await axios.request(options);
+        console.log(response.data);
+        setData(response.data);
+      } catch (error) {
+        console.error(error);
+        setError(error.response.data.message); // Set error state if there's an error
+      } finally {
+        setLoading(false); // Set loading state to false when data fetching is done
+      }
+    };
 
-  //   fetchData(); // Call the async function to fetch data when the component mounts
-  // }, [search]); // Empty dependency array means this effect runs only once after the component mounts
+    fetchData(); // Call the async function to fetch data when the component mounts
+  }, [search]); 
 
   return (
     <div>
@@ -109,7 +109,7 @@ const Listing = () => {
       </div>
       <section className="pt-5 pt-lg--3 pb-4 pb-xl-3 job-listing-three">
         <div className="container">
-          {isLoading?(<p>Loading...</p>):error?(<p>{Error}</p>):(<div className="row">
+          {isLoading?(<h4>Loading...</h4>):error?(<p className="dan">{error}</p>):(<div className="row">
             <div className="col-xl-3 col-lg-4">
               <button
                 type="button"
