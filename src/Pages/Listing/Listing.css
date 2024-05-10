@@ -1,0 +1,467 @@
+.inner-banner-one {
+    padding-bottom: 80px;
+}
+.inner-banner-one {
+    background: #244034;
+    padding: 150px 0 115px;
+    z-index: 9;
+}
+.title-two .h2, .title-two h2 {
+    font-size: 64px;
+    line-height: 1.062em;
+    color: #254035;
+    margin: 0;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+}
+.job-search-one {
+    z-index: 9;
+}
+.job-search-one form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 25px 40px rgba(19,35,56,.06);
+}
+.job-search-one form .input-box, .job-search-one.style-two .input-box {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.job-search-one form .input-box .label {
+    margin-bottom: 0;
+}
+.job-search-one form .input-box .label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,.4);
+    padding-left: 15px;
+    margin-bottom: 4px;
+}
+.nice-select {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: .9em;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 18px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: left!important;
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+.job-search-one form .input-box .keyword, .job-search-one form .input-box .nice-select, .job-search-one.style-two .input-box .nice-select {
+    font-size: 15px;
+    font-weight: 400;
+}
+.job-search-one form .input-box .nice-select {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #000;
+}
+.job-search-one form .input-box .nice-select .list {
+    border-radius: 10px;
+}
+.job-search-one form .input-box .nice-select .option {
+    font-size: 15px;
+    padding-left: 15px;
+}
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    color: #00bf58;
+    background: rgba(36,64,52,.03);
+}
+.nice-select .option {
+    font-size: .95em;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 5px;
+    list-style: none;
+    outline: none;
+    padding: 0 10px;
+    text-align: left;
+    transition: all .2s;
+}
+.filter-area-tab.offcanvas {
+    position: relative;
+    transform: none!important;
+    visibility: visible;
+    border: none;
+    z-index: 0;
+}
+.offcanvas.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: var(--bs-offcanvas-width);
+    border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(-100%);
+}
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: var(--bs-offcanvas-zindex);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: var(--bs-offcanvas-color);
+    visibility: hidden;
+    background-color: var(--bs-offcanvas-bg);
+    background-clip: padding-box;
+    outline: 0;
+    transition: var(--bs-offcanvas-transition);
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: 30vh;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+}
+.filter-area-tab .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    box-shadow: none;
+}
+.filter-area-tab .main-title {
+    font-size: 25px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.text-dark {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+}
+.filter-area-tab .light-bg {
+    background: #eff6f3;
+}
+.filter-area-tab .filter-block.bottom-line {
+    border-bottom: 1px solid rgba(49,121,90,.3);
+}
+.filter-area-tab .filter-title:not(.collapsed) {
+    margin-bottom: 10px;
+}
+.filter-area-tab a.filter-title {
+    padding-right: 22px;
+}
+.filter-area-tab .filter-title {
+    font-size: 1em;
+    position: relative;
+    display: block;
+}
+.filter-area-tab a.filter-title:not(.collapsed):before {
+    content: "";
+}
+.filter-area-tab a.filter-title:before {
+    content: "";
+    font-family: bootstrap-icons;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #31795a;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    transition: all .2s ease-in-out 0s;
+}
+.filter-area-tab .nice-select {
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: rgba(0,0,0,.65);
+    border: 1px solid #ededed;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: none;
+    padding: 0 15px;
+}
+.nice-select {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: .9em;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 18px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: left!important;
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+.filter-area-tab .nice-select:before {
+    content: "'";
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    line-height: normal;
+    transform: none;
+}
+.filter-area-tab .nice-select .list {
+    padding: 5px 0;
+    display: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    color: #00bf58;
+    background: rgba(36,64,52,.03);
+}
+.filter-area-tab .nice-select .option {
+    font-size: 1em;
+    line-height: 32px;
+}
+.nice-select .option {
+    font-size: .95em;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 5px;
+    list-style: none;
+    outline: none;
+    padding: 0 10px;
+    text-align: left;
+    transition: all .2s;
+}
+.filter-area-tab .filter-block.bottom-line {
+    border-bottom: 1px solid rgba(49,121,90,.3);
+}
+.filter-area-tab a.filter-title {
+    padding-right: 22px;
+}
+.filter-area-tab .filter-title {
+    font-size: 1em;
+    position: relative;
+    display: block;
+}
+.style-none {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.filter-area-tab .filter-input li {
+    position: relative;
+}
+.filter-area-tab .filter-input li input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    cursor: pointer;
+}
+input, textarea {
+    outline: none;
+    box-shadow: none;
+    transition: all .3s ease-in-out;
+}
+.filter-area-tab .filter-input li label {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    line-height: 35px;
+    padding-left: 28px;
+    transition: all .1s ease-in-out 0s;
+}
+.filter-area-tab .filter-input li label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    font-family: bootstrap-icons;
+    font-weight: 900;
+    transition: all .1s ease-in-out 0s;
+}
+.filter-area-tab .filter-input li label span {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: 7px;
+}
+.btn-ten {
+    line-height: 50px;
+    border-radius: 10px;
+    background: #31795a;
+    padding: 0 26px;
+    border: none;
+}
+
+.upper-filter {
+    position: relative;
+}
+.upper-filter .total-job-found {
+    color: rgba(0,0,0,.4);
+}
+.upper-filter .short-filter .nice-select {
+    min-width: 154px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 15px;
+    background: rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 30px;
+}
+.upper-filter .style-changer-btn {
+    width: 35px;
+    height: 35px;
+    line-height: 15px;
+    color: #000;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,.15);
+    display: none;
+}
+.bi-grid:before {
+    content: "";
+}
+.bi:before, [class*=" bi-"]:before, [class^=bi-]:before {
+    display: inline-block;
+    font-family: bootstrap-icons!important;
+    font-style: normal;
+    font-weight: inherit;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.accordion-box.show {
+    display: block;
+}
+.job-list-one.style-two {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.job-list-one.border-style {
+    border: 1px solid #dbe8e5;
+}
+.job-list-one {
+    background: #fff;
+    padding: 42px 35px;
+    border-radius: 10px;
+}
+.job-list-one .split-box1 {
+    width: calc(100% - 45px);
+    padding-left: 15px;
+}
+.job-list-one .job-duration {
+    font-size: 15px;
+    color: #00bf58;
+}
+.job-list-one .split-box1 .title {
+    width: 100%;
+    margin-left: 0;
+}
+.job-list-one .job-location a {
+    font-size: 15px;
+    color: rgba(0,0,0,.7);
+}
+.job-list-one .job-category a, .job-list-one .job-date, .job-list-one .job-duration, .job-list-one .job-location a {
+    font-size: 14px;
+}
+.job-list-one .job-salary {
+    font-size: 15px;
+    color: #aaa;
+    margin: 2px 0 0;
+}
+.job-list-one .save-btn {
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    border: 1px solid #d6d6d6;
+    color: #cbcbcb;
+}
+.job-list-one.style-two .apply-btn {
+    background: #31795a;
+}
+.job-list-one .apply-btn {
+    width: 85px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 17px;
+    background: #00bf58;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pt-25 {
+    padding-top: 25px !important;
+}
+.ps-4 {
+    padding-left: 1.5rem!important;
+}
+.pe-4 {
+    padding-right: 1.5rem!important;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
+.job-listing-three{
+    background-color: white;
+}
+.bbb{
+    background-color:var(--color-primary)!important;
+    color: white !important;
+        border: none !important;
+}
+.bbb:hover{
+    background-color: rgb(59, 101, 124) !important;
+
+}
+.vv{
+    color: white !important;
+}

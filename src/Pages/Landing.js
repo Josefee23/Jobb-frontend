@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Landing = () => {
+ 
   return (
     <>
       <div className="landing-container py-3">
@@ -25,9 +27,21 @@ const Landing = () => {
                 Simplify your job search and increase your chances of success.
                 Join our platform and take control of your career journey today.
               </h5>
-              <Link to={"/login"}>
-                <button className="landing-btn">Login/Register</button>
-              </Link>
+              <div className="d-flex flex-column gap-3">
+                <Link to={"/login"}>
+                  <button className="landing-btn">Login/Register</button>
+                </Link>
+                <Link to={"/listing"}>
+                  <button className="landing-btn">View Jobs Listing</button>
+                </Link>
+                <Link
+                  to={"https://www.indeed.com"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="landing-btn">Apply on Indeed</button>
+                </Link>
+              </div>
             </div>
             <div className="col-6 d-md-block d-none">
               <img src="/images/job3.png" className="img-fluid" />

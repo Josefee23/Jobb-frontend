@@ -12,6 +12,8 @@ import Profile from "./Pages/Profile";
 import PrivateRouter from "./PrivateRouter";
 import { useSelector, useDispatch } from "react-redux";
 import { JobStats } from "./Redux/Action/JobAction";
+import Listing from "./Pages/Listing/Listing";
+import JobDetails from "./Pages/JobDetails/JobDetails";
 const App = () => {
   return (
     <>
@@ -54,6 +56,8 @@ const App = () => {
               />
             </Route>
             <Route path="/landing" element={<Landing />} />
+            <Route path="/listing" element={<Listing />} />
+            <Route path="/job/:id" element={<JobDetails />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
