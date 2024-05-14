@@ -17,8 +17,8 @@ const Register = () => {
     e.preventDefault();
     dispatch(register(name, email, password));
   };
-  const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo, loading, error } = userLogin;
+  const userRegister = useSelector((state) => state.userRegister);
+  const { userInfo, loading, error } = userRegister;
   React.useEffect(() => {
     if (userInfo) {
       history(redirect);
